@@ -1,0 +1,6 @@
+{
+	"TopParallax" : "http://img5a.flixcart.com/www/promos/new/20150819_152940_730x300_image-730-300-copy-29.jpg",
+	"BottomParallax" : "http://img5a.flixcart.com/www/promos/new/20150819_152940_730x300_image-730-300-copy-29.jpg",
+	"Sliderbanner" : ["http://img5a.flixcart.com/www/promos/new/20150819_152940_730x300_image-730-300-copy-29.jpg", "http://img6a.flixcart.com/www/promos/new/20150820_152528_730x300_image-730-300--11.jpg","http://img6a.flixcart.com/www/promos/new/20150820_143147_730x300_image-730-300-copy-34.jpg"],
+	"MediaPublication" : [{"location":"a", "link":"b"}]
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Banners of home page</title>
+<link rel="stylesheet" type="text/css" href="/static/css/view.css" media="all">
+<script type="text/javascript" src="/static/js/view.js"></script>
+<script type="text/javascript" src="/static/js/AdminPanelJS.js"></script>
+
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="/static/img/top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Banners of home page</a></h1>
+		<form id="form_1044370" name="BannerForm" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>Banners of home page</h2>
+			<p>Provide location of various banners and the links that it will redirect to</p>
+		</div>						
+			<p>Top Parallex Background</p>
+        			<input type="text" name="TBanner" id="textfield3" class="fullwidth" value={{TopParallax}}>
+
+        			<p>Bottom Parallex Background</p>
+        			<input type="text" name="PBanner" id="textfield3" class="fullwidth" value={{BottomParallax}}>
+        			
+        			<p>Slider Banner</p>
+        			{%for slider in Sliderbanner%}
+        			<input type="text" name="SBanner" id="textfield3" class="fullwidth" value={{slider}}>
+        			{%endfor%}
+        			<input type="text" name="SBanner" id="textfield3" class="fullwidth" value="new">
+        			<h4>Add Media Publication</h4>
+        			<p>Banner</p>
+        			<input type="text" name="MediaBanner" id="textfield3" class="fullwidth" value="">
+                    <p>Link</p>
+        			<input type="text" name="MediaLink" id="textfield3" class="fullwidth" value="">
+        			
+        			<input type="button" href="#" class="button button-2x" onClick="updateHomeBanner(this.form)" value="Submit"></input>
+		</form>	
+		
+	</div>
+	<img id="bottom" src="/static/img/bottom.png" alt="">
+	</body>
+</html>
