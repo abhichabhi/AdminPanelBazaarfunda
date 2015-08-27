@@ -4,6 +4,8 @@ from pymongo import MongoClient
 from util import install_secret_key
 import os
 from playhouse.flask_utils import FlaskDB
+from flask.ext.babel import Babel
+
 
 ADMIN_PASSWORD = 'secret'
 APP_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -22,7 +24,7 @@ app.config.from_object(__name__)
 app.config["MONGODB_SETTINGS"] = {'DB': "staticContent"}
 app.config["SECRET_KEY"] = "JA%*&DNA&D^)A"
 db = SQLAlchemy(app)
-
+babel = Babel(app)
 flask_db = FlaskDB(app)
 database = flask_db.database
 mongo = MongoClient('localhost', 27017)['interstellerDB']

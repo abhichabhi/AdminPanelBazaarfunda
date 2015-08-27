@@ -1,0 +1,41 @@
+{
+	"mobile": {
+		"topbanner": [{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"hotbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"economicbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"compareitems": [{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"},{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"}]
+
+	},
+
+	"desktop": {
+		"topbanner": [{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"hotbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"economicbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"compareitems": [{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"},{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"}]
+		
+	},
+
+	"tablet": {
+		"topbanner": [{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"hotbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"economicbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"compareitems": [{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"},{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"}]
+		
+	},
+
+	"laptop": {
+		"topbanner": [{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"hotbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"economicbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"compareitems": [{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"},{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"}]
+		
+	},
+	"new": {
+		"topbanner": [{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"hotbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"economicbrands":[{"location":"location1","link":"link1"},{"location":"location2","link":"link2"}, {"location":"location3","link":"link3"}],
+		"compareitems": [{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"},{"id1":"558b010b0c677c369b467ade","id2":"558b010a0c677c369b4672d4"}]
+		
+	}
+
+}

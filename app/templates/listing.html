@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{{title}}</title>
+<link rel="stylesheet" type="text/css" href="/static/css/view.css" media="all">
+<script type="text/javascript" src="/static/js/view.js"></script>
+<script type="text/javascript" src="/static/js/AdminPanelJS.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="/static/img/top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a>Banner for listing page</a></h1>
+		<form id="form_1044370" name="BannerForm" class="appnitro"  method="post" action="">
+					<div class="form_description">
+			<h2>Banner for listing page</h2>
+			<p>Provide location of various banners and the links that it will redirect to</p>
+		</div>
+					<b>Choose category : </b>
+					<select name="category" onChange="window.location.href=this.value">
+						{%for cat in categoryList%}
+						{%if category == cat%}
+							<option value="/banner/listing?category={{cat}}" selected>{{cat}}</option>
+						{%else%}
+							<option value="/banner/listing?category={{cat}}">{{cat}}</option>
+							{%endif%}
+						{%endfor%}
+						
+					</select>
+					{%if category == 'new'%}
+					<p><b>Enter Category</b></p>
+        			<input type="text" name="newCategory" id="newCategory" class="fullwidth" value="new category">
+        			{%endif%}
+        			<p><b>Top Affiliate Banners</b></p>
+        			{%for banner in topbanner%}
+        			<p>Link:&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="TBannerLink" id="TBannerLink" class="fullwidth" value={{banner['link']}}></p>
+        			<p>location: <input type="text" name="TBannerLocation" id="TBannerLocation" class="fullwidth" value={{banner['location']}}></p>
+        			{%endfor%}
+        			<p>Link:&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="TBannerLinkNew" id="TBannerLink" class="fullwidth" value=""></p>
+        			<p>location: <input type="text" name="TBannerLocation" id="TBannerLocationNew" class="fullwidth" value=""></p>
+
+        			<p><b>hotbrands</b></p>
+        			{%for brands in hotbrands%}
+        			<p>Link:&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="hotbrandsLink" id="hotbrandsLink" class="fullwidth" value={{brands['link']}}></p>
+        			<p>location: <input type="text" name="hotbrandsLocation" id="hotbrandsLocation" class="fullwidth" value={{brands['location']}}></p>
+        			{%endfor%}
+        			<p>NewLink:&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="hotbrandsLinkNew" id="hotbrandsLink" class="fullwidth" value="new"></p>
+        			<p>Newlocation: <input type="text" name="hotbrandsLocation" id="hotbrandsLocationNew" class="fullwidth" value="new"></p>
+
+        			<p><b>economicbrands</b></p>
+        			{%for brands in economicbrands%}
+        			<p>Link:&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="economicbrandsLink" id="economicbrandsLink" class="fullwidth" value={{brands['link']}}></p>
+        			<p>location: <input type="text" name="economicbrandsLocation" id="economicbrandsLocation" class="fullwidth" value={{brands['location']}}></p>
+        			{%endfor%}
+        			<p>NewLink:&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="economicbrandsLinkNew" id="economicbrandsLink" class="fullwidth" value="new"></p>
+
+        			<p>NewLocation: <input type="text" name="economicbrandsLocationNew" id="economicbrandsLocation" class="fullwidth" value="new"></p>
+
+        			<p><b>Compare Items: </b></p>
+        			{%for items in compareitems%}
+        			<p>ID1 :&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="compareItemsIDLink" id="hotbrandsLocation" class="fullwidth" value={{items['link']}}></p>
+        			<p>ID2 :&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="compareItemsIDLocation" id="hotbrandsLocation" class="fullwidth" value={{items['location']}}></p>
+        			{%endfor%}
+
+        			<p>ID1 :&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="compareItemsIDLinkNew" id="hotbrandsLocation" class="fullwidth" value="new"></p>
+        			<p>ID2 :&nbsp;&nbsp; &nbsp; &nbsp; <input type="text" name="compareItemsIDLocationNew" id="hotbrandsLocation" class="fullwidth" value="new"></p>
+
+        			<input type="button" href="#" class="button button-2x" onClick="return updateListingBanner(this.form)" value="Submit"></input>
+			
+		</form>	
+		
+	</div>
+	<img id="bottom" src="/static/img/bottom.png" alt="">
+	</body>
+</html>
